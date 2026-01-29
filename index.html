@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Barcelona Turismo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS externo obligatorio -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Bootstrap SOLO se usará en el bloque innovador -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <h1>Barcelona</h1>
+    <p>Descubre la ciudad mediterránea</p>
+</header>
+
+<!-- Elemento flotante obligatorio -->
+<a class="floating-link" href="https://www.barcelonaturisme.com/" target="_blank">
+    Turismo Barcelona
+</a>
+
+<main class="layout-grid">
+
+    <!-- COLUMNA 1: MENÚ -->
+    <nav class="menu">
+        <ul>
+            <li><a href="#galeria">Galería</a></li>
+            <li><a href="#lugares">Lugares de interés</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#experiencia">Experiencia</a></li>
+            <li><a href="#noticias">Noticias</a></li>
+        </ul>
+    </nav>
+
+    <!-- COLUMNA 2: CONTENIDO PRINCIPAL -->
+    <section class="contenido">
+
+        <!-- GALERÍA -->
+        <section id="galeria">
+            <h2>Galería</h2>
+
+            <div class="gallery-grid">
+                <!-- 
+                    Imagen 1: Sagrada Familia
+                    Usar una foto exterior representativa del monumento
+                -->
+                <img src="./img//img_section/sagrada_familia.webp" width="400" height="300" alt="Sagrada Familia">
+
+                <!-- Imagen 2: Park Güell -->
+                <img src="./img/img_section/park_guell.jpg" width="400" height="300" alt="Park Güell">
+
+                <!-- Imagen 3: Barceloneta -->
+                <img src="./img/img_section/playa_barceloneta.jpg" width="400" height="300" alt="Playa de la Barceloneta">
+
+                <!-- Imagen 4: Barrio Gótico -->
+                <img src="./img/img_section/barrio_gotico.jpg" width="400" height="300" alt="Barrio Gótico">
+
+                <!-- Imagen 5: Montjuïc -->
+                <img src="./img/img_section/montjuic.jpg" width="400" height="300" alt="Montjuïc">
+
+                <!-- Imagen 6: Vista nocturna de Barcelona -->
+                <img src="./img/img_section/barcelona_noche.jpg" width="400" height="300" alt="Barcelona de noche">
+            </div>
+        </section>
+
+        <!-- LUGARES DE INTERÉS -->
+        <section id="lugares">
+            <h2>Lugares de interés</h2>
+
+            <div class="places-grid">
+
+                <article class="place-card">
+                    <h3>Sagrada Familia</h3>
+                    <!-- Imagen del monumento -->
+                    <img src="img/img_article/sagrada_familia_noche.avif" width="350" height="200" alt="Sagrada Familia">
+                    <p>Obra maestra de Antoni Gaudí y símbolo de la ciudad.</p>
+                    <p><strong>Ubicación:</strong> Eixample</p>
+                </article>
+
+                <article class="place-card">
+                    <h3>Park Güell</h3>
+                    <img src="https://via.placeholder.com/300x200?text=Park+Guell" alt="Park Güell">
+                    <p>Parque modernista con vistas espectaculares.</p>
+                    <p><strong>Ubicación:</strong> Gràcia</p>
+                </article>
+
+                <article class="place-card">
+                    <h3>La Rambla</h3>
+                    <img src="https://via.placeholder.com/300x200?text=La+Rambla" alt="La Rambla">
+                    <p>Paseo emblemático lleno de vida y cultura.</p>
+                    <p><strong>Ubicación:</strong> Centro</p>
+                </article>
+
+                <article class="place-card">
+                    <h3>Montjuïc</h3>
+                    <img src="https://via.placeholder.com/300x200?text=Montjuic" alt="Montjuïc">
+                    <p>Zona verde con museos y miradores.</p>
+                    <p><strong>Ubicación:</strong> Sants-Montjuïc</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- MAPA -->
+        <section id="mapa">
+            <h2>Mapa de la ciudad</h2>
+
+            <!-- 
+                Imagen de Google Maps centrada en Barcelona
+                Debe mostrar la ciudad completa con un zoom adecuado
+            -->
+            <img class="map-image"
+                 src="https://via.placeholder.com/800x400?text=Mapa+de+Barcelona"
+                 alt="Mapa de Barcelona">
+        </section>
+
+        <!-- BLOQUE INNOVADOR (BOOTSTRAP) -->
+        <section id="experiencia">
+            <h2>¿Por qué visitar Barcelona?</h2>
+
+            <!-- Bootstrap Accordion -->
+            <div class="accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                            Cultura
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            Museos, arquitectura modernista y patrimonio histórico.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                            Gastronomía
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse">
+                        <div class="accordion-body">
+                            Cocina mediterránea, tapas y mercados emblemáticos.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+    <!-- COLUMNA 3: NOTICIAS -->
+    <aside id="noticias" class="news">
+        <h2>Últimas noticias</h2>
+
+        <!-- Cada bloque debe tener el mismo tamaño -->
+        <article class="news-card">
+            <img src="https://via.placeholder.com/150x100?text=Evento" alt="">
+            <h3>Festival cultural</h3>
+            <p>Barcelona celebra un nuevo evento cultural...</p>
+            <a href="https://www.ajuntament.barcelona.cat/" target="_blank">Leer más</a>
+        </article>
+
+        <article class="news-card">
+            <img src="https://via.placeholder.com/150x100?text=Deporte" alt="">
+            <h3>Evento deportivo</h3>
+            <p>Gran acontecimiento deportivo en la ciudad...</p>
+            <a href="https://www.marca.com/" target="_blank">Leer más</a>
+        </article>
+
+        <article class="news-card">
+            <img src="https://via.placeholder.com/150x100?text=Museo" alt="">
+            <h3>Nueva exposición</h3>
+            <p>Un museo presenta una nueva exposición...</p>
+            <a href="https://www.lavanguardia.com/" target="_blank">Leer más</a>
+        </article>
+
+        <article class="news-card">
+            <img src="https://via.placeholder.com/150x100?text=Ciudad" alt="">
+            <h3>Mejoras urbanas</h3>
+            <p>La ciudad mejora sus espacios públicos...</p>
+            <a href="https://www.elperiodico.com/" target="_blank">Leer más</a>
+        </article>
+
+        <article class="news-card">
+            <img src="https://via.placeholder.com/150x100?text=Gastronomia" alt="">
+            <h3>Ruta gastronómica</h3>
+            <p>Nuevas rutas gastronómicas disponibles...</p>
+            <a href="https://www.timeout.es/" target="_blank">Leer más</a>
+        </article>
+    </aside>
+
+</main>
+
+<footer>
+    <p>Trabajo académico - Diseño web responsive</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
